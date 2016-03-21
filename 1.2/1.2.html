@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>任务2</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<style type="text/css">
+		* {
+			padding: 0;
+			margin: 0;
+		}
+		#header a{
+			color: white;
+			text-decoration: none;
+		}
+		body {
+			font: 18px/22px "微软雅黑"; /*全页面字体设置*/
+			background-color: #d9d2e9;
+			line-height: 40px;
+		}
+		p {
+			text-indent: 25px;
+		}
+		h3,small{							/*全页面字体设置*/
+			color: #666666;
+		}
+		#body h2{
+			line-height: 60px;
+		}
+		#header {							/*头部样式设置*/
+			background-color: #434343;
+			height: 70px;
+			border: 1px solid grey;
+		}
+		#header img {
+			height:70px;
+			width: 150px;
+			margin-left: 20px;
+		}
+		#header ul {
+			float: right;
+			margin-top: 15px;
+			margin-right: 12px;
+		}
+		#header li {
+			float:left;
+			margin: 0 14px;
+
+		}
+		#body {
+			margin:0 30px;
+		}
+		#paper1 {
+			margin-top: 20px;
+			padding: 30px 20px 20px 20px;
+			background-color: white;
+			border-style: solid;
+			border-width: 1px 3px 3px 0;
+			border-color: grey;
+		}
+		#paper2 {
+			margin-top: 20px;
+			padding: 30px 20px 20px 20px;
+			background-color: white;
+			border-style: solid;
+			border-color: grey;
+			border-width: 1px 3px 3px 0;
+		}
+		#paper2 ul{
+			padding-left: 30px;
+			list-style-type: none;
+		}
+		#image {
+			margin-top: 20px;
+			padding: 30px 20px 20px 20px;
+			background-color: white;
+			border-style: solid;
+			border-color: grey;
+			border-width: 1px 3px 3px 0;
+		}
+		#image dd{
+			margin:50px;
+			width: 240px;
+			padding: 20px;
+			border:1px solid grey;
+		}
+		#image dd img{
+			display: block; /*之前无法居中的原因是因为它不是块级元素*/
+			width: 200px;	/*之前无法居中的原因是因为它没有宽度*/
+			margin:0 auto;
+		}
+		#image dd span{		/*之前无法居中的原因是因为它没有宽度*/
+			width: 100px;
+			display: block;
+			margin: 0 auto;
+		}
+		#table {
+			margin-top: 20px;
+			padding: 30px 20px 20px 20px;
+			background-color: white;
+			border-style: solid;
+			border-color: grey;
+			border-width: 1px 3px 3px 0;
+		}
+		#table ol{
+			margin-left: 50px;
+			margin-bottom: 20px;
+		}
+		#table table{ /*表格的样式定义  CSS border-collapse 属性*/
+			width:1200px;
+			border-color: grey;
+			border-style: solid;
+			border-width: 0 1px 1px 0;
+		}
+		#table th{
+			background-color:#434343;
+			color: white;
+		}
+		#table td{
+			border-color: grey;
+			border-style: solid;
+			border-width: 1px 0 0 1px;
+		}
+		#sum {
+			background-color: #cccccc;
+		}
+		#register{
+			margin-top: 20px;
+			padding: 30px 20px 20px 20px;
+			background-color: white;
+			border-style: solid;
+			border-color: grey;
+			border-width: 1px 3px 3px 0;
+		}
+		#line {
+			float: left;
+			border: 3px solid grey;
+			height: 50px;
+			margin-right: 20px;
+		}
+		#register h2{
+			width: 600px; /*暂留 不重要*/
+		}
+		#register p{
+			text-indent: 0;
+		}
+		.input p{
+			color: #666666;
+		}
+		.input,.input3{
+			height: 90px;
+		}
+		.input2{
+			height: 40px;
+		}
+		.input span,.input2 span,.input3 span{
+			margin-left: 450px;
+		}
+		.input div,.input2 div,.input3 div{
+			margin-right: 300px;
+			width: 300px;
+			float: right;
+		}
+		.input3 textarea{
+			height:90px;
+			width: 200px;
+			color: black;
+		}
+		#submit input{
+			display: block;
+			width: 1200px;
+			height: 50px;
+			margin: 0 auto;
+			border-radius:15px;
+			font-size:27px;
+			color: white;
+			background-color: #3d85c6;
+			outline-style: none;
+		}
+		#footer{
+			margin-top:40px; 
+			height: 70px;
+			background-color: #434343
+		}
+		#footer div{
+			width: 100px;
+			color: white;
+			margin: 0 auto;
+		}
+		#
+		</style>
+	</head>
+	<body>
+		<div id="header">
+			<img src="logo.png">
+			<ul>
+				<li><a href="#">导航链接一</a></li>
+				<li><a href="#">导航链接二</a></li>
+				<li><a href="#">导航链接三</a></li>
+				<li><a href="#">导航链接四</a></li>
+			</ul>
+		</div>
+		<div id="body">
+			<div id="paper1">
+				<h2>文章一级标题</h2>
+				<h3>文章二级标题</h3>
+				<small>文章作者 文章发表时间</small>
+				<p>
+					这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落
+					</br>换行了，这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的		段落这是一个很长很长的段落这是一个很长很长的段落<a href="http://ife.baidu.	com" target="_blank">这里有一个链接指向ife.baidu.com</a></p>
+							<img src="http://img01.cztv.com/201603/10/dca21a2c120edf688e1e28e4e33f8186.jpg"/>
+				<p>
+				这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落
+				</p>
+			</div>
+			<div id="paper2">
+				<h2>另一篇文章一级标题</h2>
+				<h3>另一篇文章二级标题</h3>
+				<small>文章发表时间 文章作者</small>
+				<p>这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落
+				</br>换行了，这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落<a href="http://ife.baidu.com">这里有一个链接指向ife.baidu.com</a>这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落,这是一个很长很长的段落<b>这是粗体字</b></p>
+				<img src="http://img01.store.sogou.com/net/a/04/link?appid=100520031&w=600&url=http://mmbiz.qpic.cn/mmbiz/g4hacZxcMVbf9kZ5VIgDfg5ozQym0kenmLnzibSrK28rSDKCiaWeHNVv0tCOeFJBxK4CgB2SUHick1ibhJupRu97SQ/0?wx_fmt=jpe"/>
+				<ul>
+					<li>列表项目一</li>
+					<li>列表项目二</li>
+					<li>列表项目三</li>
+				</ul>
+			</div>
+			<div id="image">
+			<h2>图片</h2>
+			<dl>
+				<dd><span>好看的图片</span><img src="http://ifestack.github.io/task/pic.png"/></dd>
+				<dd><span>好看的图片</span><img src="http://ifestack.github.io/task/pic.png"/></dd>
+				<dd><span>好看的图片</span><img src="http://ifestack.github.io/task/pic.png"/></dd>
+				<dd><span>好看的图片</span><img src="http://ifestack.github.io/task/pic.png"/></dd>
+			</dl>
+			</div>
+			<div id="table">
+				<h2>最后一篇文章的标题</h2>
+				<h3>文章的二级标题</h3>
+				<small>文章作者 发表时间</small>
+				<ol>
+					<li>排名1</li>
+					<li>排名2</li>
+					<li>排名3</li>
+				</ol>
+				<table>
+					<tr>
+						<th>表头</th>
+						<th>表头</th>
+						<th>表头</th>
+					</tr>
+					<tr>
+						<td>这里是表格内容</td>
+						<td>这里是表格内容</td>
+						<td><a href="#">操作</a></td>
+					</tr>
+					<tr>
+						<td>这里是表格内容</td>
+						<td>这里是表格内容</td>
+						<td><a href="#">操作</a></td>
+					</tr>
+					<tr>
+						<td>这里是表格内容</td>
+						<td>这里是表格内容</td>
+						<td><a href="#">操作</a></td>
+					</tr>
+					<tr>
+						<td>这里是表格内容</td>
+						<td>这里是表格内容</td>
+						<td><a href="#">操作</a></td>
+					</tr>
+					<tr id="sum">
+						<td>总计</td>
+						<td colspan="2">1000</td>
+					</tr>
+				</table>
+			</div>
+			<div id="register">
+				<div id="line"></div>
+				<h2> 这里以后是一个侧栏 这是侧栏的标题</h2>
+				<form>
+					<div class="input">
+						<span>请输入邮箱的地址：</span>
+						<div>
+							<input type="text" placeholder="请输入用户名"/>
+							<p>邮箱地址请按照要求输入</p>
+						</div>
+					</div>
+					<div class="input2">
+							<span>请输入密码：</span>
+						<div>
+							<input type="password" placeholder="请输入密码"/>
+						</div>
+					</div>
+					<div class="input">
+						<span>请重复输入密码：</span>
+						<div>
+							<input type="password" placeholder="请确认密码"/>
+							<p>密码请为6到16位数字</p>
+						</div>
+					</div>
+					<div class="input2">
+						<span>性别：</span>
+						<div>
+							<input type="radio" name="sex" />男
+							<input type="radio" name="sex">女
+						</div>
+					</div>
+					<div class="input2">
+						<span>城市:</span>
+						<div>
+							<select>
+								<option>北京</option>
+								<option>山西</option>
+							</select>
+						</div>
+					</div>
+					<div class="input2">
+						<span>爱好</span>
+						<div>
+							<input type="checkbox" name="sex" />运动
+							<input type="checkbox" name="sex">艺术
+						</div>
+					</div>
+					<div class="input3">
+						<span>个人描述：</span>
+						<div>
+							<textarea placeholder="这是一个文本域"></textarea>
+						</div>
+					</div>
+					<div id="submit">
+						<input type="submit" value="确认提交" />
+					</div>
+				</form>
+			</div>
+		</div>
+		<div id="footer">
+			<div>版权所有&copy;</div>
+		</div>
+	</body>
+</html>
